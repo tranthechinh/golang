@@ -20,11 +20,6 @@ func main() {
 		str1, err := reader.ReadString('\n')
 		str1 = strings.TrimSuffix(str1, "\n")
 		a, err := strconv.Atoi(str1)
-		if a == 0 {
-			fmt.Println(err.Error())
-			return
-		}
-
 		if err != nil {
 			fmt.Println(err.Error())
 			return
